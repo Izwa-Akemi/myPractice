@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>3択クイズ</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="mask hidden" id="mask"></div>
+  <div class="wrapper">
+    <h1 class="title"><i class="fas fa-question"></i>歴史の雑学3択クイズ<i class="fas fa-question"></i></h1>
+    <div class="q-wrapper">
+      <h2 class="q-title">問題1. 古代ローマの人たちは驚くものを洗剤代わりにしてたそれは何？</h2>
+      <div class="q-radio">
+        <label><input type="radio" name="question1" value="1" checked><span>砂</span></label>
+        <label><input type="radio" name="question1" value="2"><span>ワイン</span></label>
+        <label><input type="radio" name="question1" value="3"><span>おしっこ</span></label>
+      </div>
+    </div>
+    <div class="q-wrapper">
+      <h2 class="q-title">問題2.敵に塩を送るの由来になった武将は誰？</h2>
+      <div class="q-radio">
+        <label><input type="radio" name="question2" value="1" checked><span>武田信玄</span></label><br>
+        <label><input type="radio" name="question2" value="2"><span>上杉謙信</span></label><br>
+        <label><input type="radio" name="question2" value="3"><span>石田光成</span></label>
+      </div>
+    </div>
+    <div class="q-wrapper">
+      <h2 class="q-title">問題3. 食べられるお城と呼ばれてるのはどれ？</h2>
+      <div class="q-radio">
+        <label><input type="radio" name="question3" value="1" checked><span>姫路城</span></label><br>
+        <label><input type="radio" name="question3" value="2"><span>熊本城</span></label><br>
+        <label><input type="radio" name="question3" value="3"><span>小田原城</span></label>
+      </div>
+    </div>
+    <div class="answer" id="answer">解答!!</div>
+    <div class="modal" id="modal">
+      <div class="result" id="result">?</div>
+      <div class="close" id="close">閉じる</div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
